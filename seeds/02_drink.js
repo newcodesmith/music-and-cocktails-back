@@ -1,6 +1,6 @@
-const drinks = require('../drinks');
+const drinks = require('../drinks-seed-data');
 
-exports.seed = function(knex, Promise) {
+exports.seed = function (knex, Promise) {
   // Deletes ALL existing entries
   return knex('drink').del()
     .then(function () {
