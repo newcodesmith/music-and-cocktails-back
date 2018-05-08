@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
       table.text('drink_description').notNullable();
       table.text('ingredients').notNullable();
       table.text('direction').notNullable();
+      table.text('drink_pic_url');
       table.integer('album_id').references('album.id').unsigned().onDelete('cascade');
     });
   };
