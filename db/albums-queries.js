@@ -17,5 +17,10 @@ module.exports = {
         return knex('album')
             .where('id', id)
             .update(album, '*');
+    },
+    delete(id) {
+        return knex('album')
+            .where('id', id)
+            .del();
     }
 }

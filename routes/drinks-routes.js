@@ -57,6 +57,14 @@ router.put('/:id', isValidId, (req, res, next) => {
         next(new Error('Invalid Album'));
     }
 });
+
+router.delete('/:id', isValidId, (req, res) => {
+    queries.delete(req.params.id)
+        .then(() => {
+            res.json({
+                delete: true
+            });
+        });
 });
 
 module.exports = router;

@@ -6,8 +6,8 @@ const logger = require('morgan');
 
 const app = express();
 
-const albums = require('./routes/albums');
-const drinks = require('./routes/drinks');
+const albums = require('./routes/albums-routes');
+const drinks = require('./routes/drinks-routes');
 
 app.use(logger('dev'));
 app.use(express.json());

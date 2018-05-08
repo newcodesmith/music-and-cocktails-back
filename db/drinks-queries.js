@@ -17,5 +17,10 @@ module.exports = {
         return knex('drink')
             .where('id', id)
             .update(drink, '*');
+    },
+    delete(id) {
+        return knex('drink')
+            .where('id', id)
+            .del();
     }
 }
