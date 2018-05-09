@@ -7,7 +7,8 @@ module.exports = {
     },
     getOne(id) {
         return knex('album')
-            .where('id', id)
+            .join('drink', 'drink.id', 'album.drink_id')
+            .where('drink.id', id)
             .first();
     },
     create(album) {
