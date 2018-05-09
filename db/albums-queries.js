@@ -2,7 +2,8 @@ const knex = require('./knex'); // the connection
 
 module.exports = {
     getAll() {
-        return knex('album');
+        return knex('album')
+        .join('drink', 'drink.id', 'album.drink_id');
     },
     getOne(id) {
         return knex('album')
