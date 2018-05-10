@@ -49,7 +49,7 @@ router.post('/', (req, res, next) => {
 
 router.put('/:id', isValidId, (req, res, next) => {
     if (validDrink(req.body)) {
-        queries.update(req.body)
+        queries.update(req.params.id, req.body)
             .then(drinks => {
                 res.json(drinks[0]);
             });
