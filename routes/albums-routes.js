@@ -5,7 +5,8 @@ const router = express.Router();
 const queries = require('../db/albums-queries');
 
 function isValidId(req, res, next) {
-    if (!isNaN(req.params.id)) return next();
+    if (!isNaN(req.params.id)) 
+    return next();
     next(new Error('Invalid ID'));
 }
 
@@ -40,18 +41,18 @@ router.post('/', (req, res, next) => {
     if (validAlbum(req.body)) {
         queries.create(req.body)
             .then(albums => {
-                res.json(albums[0]);
+                res.status(201).json(albums[0]);
             });
     } else {
         next(new Error('Invalid Album'));
     }
 });
 
-router.put('/:id', isValidId, (req, res, next) => {
+router.put('/:id', isValidId, (req, res, next) => {    
     if (validAlbum(req.body)) {
-        queries.update(req.body)
+        queries.update(req.params.id, req.body)
             .then(albums => {
-                res.json(albums[0]);
+                res.status(201).json(albums[0]);
             });
     } else {
         next(new Error('Invalid Album'));
