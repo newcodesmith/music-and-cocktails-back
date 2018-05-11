@@ -5,7 +5,7 @@ module.exports = [
         album_title: "Pet Sounds",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "42oBdomfxF0DbKKMEqrnQW",
-        drink_id: 1
+        album_drink_id: 1
     },
     {
         genre: "Indie",
@@ -13,7 +13,7 @@ module.exports = [
         album_title: "Trouble Will Find Me",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "2JhR4tjuc3MIKa8v2JaKze",
-        drink_id: 2
+        album_drink_id: 2
     },
     {
         genre: "R&B",
@@ -21,7 +21,7 @@ module.exports = [
         album_title: "I Never Loved A Man The Way I Love You",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "5WndWfzGwCkHzAbQXVkg2V",
-        drink_id: 3
+        album_drink_id: 3
     },
     {
         genre: "Jazz",
@@ -29,7 +29,7 @@ module.exports = [
         album_title: "Someday My Prince Will Come",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "68A4o4tkirJRFYbO9Ag0YZ",
-        drink_id: 4
+        album_drink_id: 4
     },
     {
         genre: "Folk/Country",
@@ -37,7 +37,7 @@ module.exports = [
         album_title: "The Weatherman",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "3IcfYXw7lTtLfG5XWLlSZi",
-        drink_id: 5
+        album_drink_id: 5
     },
     {
         genre: "Rap",
@@ -45,6 +45,6 @@ module.exports = [
         album_title: "Doggystyle",
         album_info: "One of the greatest albums of all time.",
         spotify_album_id: "7f9KDGqY7X2VLBM5aA66KM",
-        drink_id: 6
+        album_drink_id: 6
     },
 ]

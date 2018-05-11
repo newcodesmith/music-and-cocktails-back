@@ -1,28 +1,36 @@
 const knex = require('./knex'); // the connection
+// const joinAliases = 'album.id AS album_id, album.genre AS genre, album.artist AS artist, album.album_title AS album_title, album.album_info AS album_info, album.spotify_album_id AS spotify_album_id    drink.id AS drink_id';
+
 
 module.exports = {
     getAll() {
-        return knex('album')
-        .join('drink', 'drink.id', 'album.drink_id');
+
+        // console.log('sql', knex.from('album').innerJoin('drink', 'album.drink_id', 'drink.id').toString())
+        
+        return knex.from('album')
+                .innerJoin('drink', 'album.album_drink_id', 'drink.drink_id')
     },
     getOne(id) {
-        return knex('album')
-            .join('drink', 'drink.id', 'album.drink_id')
-            .where('drink.id', id)
+        return knex.from('album')
+            .innerJoin('drink', 'album.album_drink_id', 'drink.drink_id')
+            .where('album_id', id)
             .first();
     },
+
     create(album) {
         return knex('album')
             .insert(album, '*');
     },
     update(id, album) {
+        // console.log(knex('album').where('id', id).update(album, '*').tostring;
+        
         return knex('album')
-            .where('id', id)
-            .update(album, '*');
+        .where('album_id', id)
+        .update(album, '*');
     },
     delete(id) {
         return knex('album')
-            .where('id', id)
+            .where('album_id', id)
             .del();
     }
 }
