@@ -4,12 +4,10 @@ const knex = require('./knex'); // the connection
 
 module.exports = {
     getAll() {
-
-        // console.log('sql', knex.from('album').innerJoin('drink', 'album.drink_id', 'drink.id').toString())
-        
         return knex.from('album')
-                .innerJoin('drink', 'album.album_drink_id', 'drink.drink_id')
+            .innerJoin('drink', 'album.album_drink_id', 'drink.drink_id')
     },
+
     getOne(id) {
         return knex.from('album')
             .innerJoin('drink', 'album.album_drink_id', 'drink.drink_id')
@@ -21,13 +19,13 @@ module.exports = {
         return knex('album')
             .insert(album, '*');
     },
+
     update(id, album) {
-        // console.log(knex('album').where('id', id).update(album, '*').tostring;
-        
         return knex('album')
-        .where('album_id', id)
-        .update(album, '*');
+            .where('album_id', id)
+            .update(album, '*');
     },
+
     delete(id) {
         return knex('album')
             .where('album_id', id)

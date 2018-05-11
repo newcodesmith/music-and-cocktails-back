@@ -11,7 +11,7 @@ function isValidId(req, res, next) {
 
 function validDrink(drink) {
     const hasDrinkTitle = typeof drink.drink_title == 'string' && drink.drink_title.trim() != '';
-    const hasDescription = typeof drink.description == 'string' && drink.description.trim() != '';
+    const hasDescription = typeof drink.drink_description == 'string' && drink.drink_description.trim() != '';
     const hasIngredients = typeof drink.ingredients == 'string' && drink.ingredients.trim() != '';
     const hasDirection = typeof drink.direction == 'string' && drink.direction.trim() != '';
     return hasDrinkTitle && hasDescription && hasIngredients && hasDirection;
@@ -47,14 +47,14 @@ router.post('/', (req, res, next) => {
     }
 });
 
-router.put('/:id', isValidId, (req, res, next) => {
+router.put('/:id', isValidId, (req, res, next) => {    
     if (validDrink(req.body)) {
         queries.update(req.params.id, req.body)
             .then(drinks => {
-                res.json(drinks[0]);
+                res.status(201).json(drinks[0]);
             });
     } else {
-        next(new Error('Invalid Album'));
+        next(new Error('Invalid Drink'));
     }
 });
 

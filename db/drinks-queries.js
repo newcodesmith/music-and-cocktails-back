@@ -4,23 +4,27 @@ module.exports = {
     getAll() {
         return knex('drink');
     },
+
     getOne(id) {
         return knex('drink')
-            .where('id', id)
+            .where('drink_id', id)
             .first();
     },
+
     create(drink) {
         return knex('drink')
             .insert(drink, '*');
     },
-    update(id, drink) {
+
+    update(id, album) {      
         return knex('drink')
-            .where('id', id)
-            .update(drink, '*');
+        .where('drink_id', id)
+        .update(album, '*');
     },
+
     delete(id) {
         return knex('drink')
-            .where('id', id)
+            .where('drink_id', id)
             .del();
     }
 }

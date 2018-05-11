@@ -50,7 +50,6 @@ router.post('/', (req, res, next) => {
 
 router.put('/:id', isValidId, (req, res, next) => {    
     if (validAlbum(req.body)) {
-                
         queries.update(req.params.id, req.body)
             .then(albums => {
                 res.status(201).json(albums[0]);
