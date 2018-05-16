@@ -1,9 +1,9 @@
 module.exports = [
     {
-        genre: "Rock/POP",
+        genre: "Rock-POP",
         artist: "The Beach Boys",
         album_title: "Pet Sounds",
-        album_info: "One of the greatest albums of all time.",
+        album_info: "Recorded and released in 1966, not long after the sunny, textural experiments of California Girls, Pet Sounds, aside from its importance as Brian Wilson's evolutionary compositional masterpiece, was the first rock record that can be considered a 'concept album'; from first cut to last we were treated to an intense, linear personal vision of the vagaries of a love affair and the painful, introverted anxieties that are the wrenching precipitates of the unstable chemistry of any love relationship. This trenchant cycle of love songs has the emotional impact of a shatteringly evocative novel, and by God if this little record didn't change only the course of popular music, but the course of a few lives in the bargain. It sure as hell changed its creator, Brian, who by 1966 had been cruising along at the forefront of American popular music for four years, doling out a constant river of hit songs and producing that tough yet mellifluous sound that was the only intelligent innovation in pop music between Chuck Berry and the Beatles.",
         spotify_album_id: "42oBdomfxF0DbKKMEqrnQW",
         album_drink_id: 1
     },
@@ -32,7 +32,7 @@ module.exports = [
         album_drink_id: 4
     },
     {
-        genre: "Folk/Country",
+        genre: "Folk-Country",
         artist: "Gregory Alan Isakov",
         album_title: "The Weatherman",
         album_info: "One of the greatest albums of all time.",
