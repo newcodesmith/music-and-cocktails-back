@@ -6,6 +6,7 @@ exports.up = function(knex, Promise) {
     table.text('artist').notNullable();
     table.text('album_title').notNullable();
     table.text('album_info');
+    table.text('album_cover_url');
     table.text('spotify_album_id').notNullable();
     table.integer('album_drink_id').references('drink.drink_id').unsigned();
   });
