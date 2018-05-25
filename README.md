@@ -13,6 +13,9 @@ Click [here]( https://top-albums-list.firebaseapp.com/) to enjoy!
 Click [here]( https://github.com/newcodesmith/music-and-cocktails-front) to see the frontend repo.
 Click [here]( https://github.com/newcodesmith/Spotify-BackEnd) to see the Spotify backend repo.
 
+##Installation
+To run locally,  clone repo and run "npm install" then "npm start"
+
 ##License
 2018 NEWCODESMITH
 
