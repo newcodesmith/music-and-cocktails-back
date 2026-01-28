@@ -6,10 +6,10 @@
 module.exports = {
   development: {
     client: "pg",
-    connection: "postgres://localhost/music-and-cocktails",
+    connection: "postgres://localhost/music-and-cocktails-api",
   },
   production: {
     client: "pg",
-    connection: process.env.DATABASE_URL + '?ssl=true',
+    connection: process.env.DATABASE_URL,
   },
 };
