@@ -81,7 +81,7 @@ module.exports = [
         "drink_description": "The origins of the drink can be traced back to Cuba and the 16th-century Cuban cocktail El Draque, named for Sir Francis Drake. Appropriately, almost all of the ingredients in the Mojito are indigenous to Cuba. Rum, lime, mint and sugar (derived from cane juice) are mixed with soda water to create a refreshing classic cocktail. The Mojito is traditionally served over ice in a highball glass and often associated with summer. Like your cocktails with literary references? You're in luck. The Mojito is said to have been a favorite of Ernest Hemingway.",
         "ingredients": "6 Mint leaves; 3/4 oz Simple syrup; 3/4 Fresh lime juice; 1 1/2 oz White rum; 1 1/2 oz Club soda",
         "direction": "In a shaker, lightly muddle the mint. Add the simple syrup, lime juice and rum, and fill with ice. Shake well and pour (unstrained) into a highball glass. Top with the club soda and garnish with a mint sprig.",
-        "drink_pic_url": "https://cdn.liquor.com/wp-content/uploads/2017/03/07152909/mojito-720x720-recipe.jpg"
+        "drink_pic_url": "https://www.saveur.com/uploads/2007/02/SAVEUR_Mojito_1149-Edit-scaled.jpg?auto=webp"
     },
     
 ]
