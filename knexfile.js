@@ -6,7 +6,7 @@
 module.exports = {
   development: {
     client: "pg",
-    connection: "postgres://localhost/music-and-cocktails-api",
+    connection: "postgres://localhost/music-and-cocktails",
   },
   production: {
     client: "pg",
